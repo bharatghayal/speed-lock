@@ -1,3 +1,8 @@
+import aquaticImg from './assets/images/regenerated_image_1778929259387.png';
+import goldImg from './assets/images/regenerated_image_1778929256491.png';
+import ultraImg from './assets/images/regenerated_image_1778928958837.png';
+import superFastImg from './assets/images/regenerated_image_1778928864132.png';
+import proGripImg from './assets/images/input_file_5.png';
 
 export const COLORS = {
   yellow: "#FEDD00",
@@ -16,7 +21,7 @@ export const PRODUCTS = [
     fullName: "Speed Lock Aquatic",
     tagline: "Waterproof Wood Adhesive",
     description: "Superior water resistance for furniture exposed to high moisture. The ultimate bond for aquatic environments.",
-    image: "/src/assets/images/regenerated_image_1778929259387.png",
+    image: aquaticImg,
     color: "#00AEEF",
     bgColor: "bg-blue-50",
     features: ["D3 Grade Waterproof", "High Coverage", "Bubble-Free", "Termite Resistant"],
@@ -27,7 +32,7 @@ export const PRODUCTS = [
     fullName: "Speed Lock Gold",
     tagline: "New Generation Wood Adhesive",
     description: "Ultra-strong bonding with higher coverage and superior strength. Designed for the craftsmen who demand perfection.",
-    image: "/src/assets/images/regenerated_image_1778929256491.png",
+    image: goldImg,
     color: "#FEDD00",
     bgColor: "bg-yellow-50",
     features: ["Next-Gen Formula", "Superior Strength", "High Heat Resistance", "Quick Grab"],
@@ -38,7 +43,7 @@ export const PRODUCTS = [
     fullName: "Speed Lock Ultra",
     tagline: "Superior Wood Working Adhesive",
     description: "Waterproof bonding that conforms to international standards. Reliable, strong, and incredibly durable.",
-    image: "/src/assets/images/regenerated_image_1778928958837.png",
+    image: ultraImg,
     color: "#ED1C24",
     bgColor: "bg-red-50",
     features: ["Conforms to Din En 204", "Heavy Duty", "Instant Bonding", "Industrial Quality"],
@@ -49,7 +54,7 @@ export const PRODUCTS = [
     fullName: "Speed Lock Super Fast",
     tagline: "Safe Anti-Bubble Adhesive",
     description: "Get the job done in record time. Instant grip with anti-bubble technology for a flawless finish.",
-    image: "/src/assets/images/regenerated_image_1778928864132.png",
+    image: superFastImg,
     color: "#F37021",
     bgColor: "bg-orange-50",
     features: ["Instant Grip", "Anti-Termite", "Anti-Bubble", "Weather Proof"],
@@ -60,7 +65,7 @@ export const PRODUCTS = [
     fullName: "Speed Lock Pro Grip",
     tagline: "Synthetic Resin Adhesive",
     description: "The professional's choice for synthetic resin bonding. Versatile, reliable, and exceptionally strong.",
-    image: "/src/assets/images/input_file_5.png",
+    image: proGripImg,
     color: "#662D91",
     bgColor: "bg-purple-50",
     features: ["Multi-Purpose", "Reliable Bond", "Fast Drying", "High Viscosity"],

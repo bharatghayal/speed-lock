@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import supportExpertImg from '../assets/images/regenerated_image_1778927756612.jpg';
 
 export default function ContactSection() {
   return (
@@ -52,7 +53,7 @@ export default function ContactSection() {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-yellow-400 shadow-xl flex items-center justify-center text-blue-900 shrink-0">
-                    <MapPin size={28} font-black />
+                    <MapPin size={28} />
                   </div>
                   <div>
                     <h4 className="font-black text-yellow-400 uppercase text-xs tracking-wider mb-2">Location</h4>
@@ -66,10 +67,9 @@ export default function ContactSection() {
                   <div className="relative">
                     <div className="w-14 h-14 rounded-2xl bg-yellow-400 shadow-xl flex items-center justify-center text-blue-900 shrink-0 overflow-hidden">
                       <img 
-                        src="https://drive.google.com/uc?id=1gOhZeq_csvc_utkyaH7XdwpbYxavXH4n" 
+                        src={supportExpertImg} 
                         alt="Support Expert" 
                         className="w-full h-full object-cover"
-                        referrerPolicy="no-referrer"
                         onError={(e) => {
                           // Fallback to Icon if image fails
                           (e.target as HTMLImageElement).style.display = 'none';

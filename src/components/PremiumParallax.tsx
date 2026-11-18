@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion } from 'motion/react';
 import { Shield, Zap, Droplets, Target } from 'lucide-react';
+import workshopImg from '../assets/images/regenerated_image_1778927756612.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -128,10 +129,9 @@ export default function PremiumParallax() {
             <div className="relative z-10 overflow-hidden rounded-[60px] shadow-2xl">
               <img 
                 ref={imgRef}
-                src="https://drive.google.com/uc?export=view&id=1gOhZeq_csvc_utkyaH7XdwpbYxavXH4n" 
+                src={workshopImg} 
                 alt="Molecular Bond Technology"
-                className="w-full aspect-[4/5] object-contain bg-gray-50 scale-110"
-                referrerPolicy="no-referrer"
+                className="w-full aspect-[4/5] object-cover bg-gray-50 scale-110"
               />
             </div>
 

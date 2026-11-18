@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent, useSpring, useTransform } from 'motion/react';
 import { ArrowRight, Clock, ShieldCheck, CloudSun, Sparkles } from 'lucide-react';
+import superFastImg from '../assets/images/regenerated_image_1778928864132.png';
+import goldImg from '../assets/images/regenerated_image_1778929256491.png';
+import aquaticImg from '../assets/images/regenerated_image_1778929259387.png';
 
 const REVEALS = [
   {
@@ -8,7 +11,7 @@ const REVEALS = [
     tag: "CORE ADVANTAGE 01",
     title: "Instant Bonding",
     description: "Our proprietary formula achieves handling strength in just 15 minutes, allowing you to move to the next stage of your project faster than ever.",
-    image: "/src/assets/images/regenerated_image_1778928864132.png", // Super Fast Adhesive
+    image: superFastImg, // Super Fast Adhesive
     glowColor: "rgba(243, 112, 33, 0.15)",
     solidColor: "#F37021",
     textHighlight: "text-[#F37021]",
@@ -19,7 +22,7 @@ const REVEALS = [
     tag: "CORE ADVANTAGE 02",
     title: "Termite Proof Shield",
     description: "Built-in anti-pest additives ensure that your wood joints are protected from within, preventing long-term structural damage.",
-    image: "/src/assets/images/regenerated_image_1778929256491.png", // Gold Adhesive
+    image: goldImg, // Gold Adhesive
     glowColor: "rgba(254, 221, 0, 0.15)",
     solidColor: "#FEDD00",
     textHighlight: "text-[#DDAF00]",
@@ -30,7 +33,7 @@ const REVEALS = [
     tag: "CORE ADVANTAGE 03",
     title: "Weather Resistant",
     description: "Tested in 95% humidity and extreme temperatures. Whether it's the coastal monsoons or the northern heat, your bond stays true.",
-    image: "/src/assets/images/regenerated_image_1778929259387.png", // Aquatic Adhesive
+    image: aquaticImg, // Aquatic Adhesive
     glowColor: "rgba(0, 174, 239, 0.15)",
     solidColor: "#00AEEF",
     textHighlight: "text-[#2563EB]",

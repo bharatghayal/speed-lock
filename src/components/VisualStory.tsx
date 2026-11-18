@@ -5,6 +5,7 @@ import { Play, Star, ChevronRight } from 'lucide-react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import visualStoryImg from '../assets/images/regenerated_image_1778928016842.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,7 +43,7 @@ export default function VisualStory() {
       {/* Background Image Overlay with Multiply Effect */}
       <div className="absolute inset-0 z-0 bg-blue-100">
         <img 
-          src="/src/assets/images/regenerated_image_1778928016842.jpg"
+          src={visualStoryImg}
           className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-20"
           alt=""
         />
@@ -61,7 +62,7 @@ export default function VisualStory() {
           <div ref={imageRef} className="lg:w-1/2 relative">
               <div className="relative rounded-[60px] overflow-hidden shadow-2xl">
                 <img 
-                  src="/src/assets/images/regenerated_image_1778928016842.jpg" 
+                  src={visualStoryImg} 
                   alt="Carpenter using Speed Lock"
                   className="w-full aspect-square object-cover"
                 />
