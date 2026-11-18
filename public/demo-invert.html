@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular Mouse Invert Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #f0f0f0;
+            height: 200vh;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        h1 { font-size: 5rem; margin-bottom: 2rem; color: #001B94; }
+        p { font-size: 1.5rem; color: #666; max-width: 800px; margin: 0 auto 3rem; }
+        
+        .box {
+            width: 300px;
+            height: 300px;
+            background: #FEDD00;
+            margin: 50px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            border-radius: 40px;
+            font-size: 2rem;
+            color: #001B94;
+        }
+        
+        .dark-section {
+            background: #001B94;
+            color: white;
+            padding: 100px 20px;
+            margin: 100px 0;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            border-radius: 100px;
+            border: none;
+            background: #ED1C24;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .magnetic {
+            /* Handled by script */
+        }
+        
+        #instructions {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 300px;
+            font-size: 0.9rem;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="instructions">
+        <strong>How to use:</strong><br>
+        1. Copy <code>mouse-invert-vanilla.js</code><br>
+        2. Instantiate: <code>new MouseInverter()</code><br>
+        3. Add class <code>magnetic</code> to buttons.
+    </div>
+
+    <div class="container">
+        <h1>Invert Effect</h1>
+        <p>Premium, high-performance mouse interaction following the blend-mode difference methodology.</p>
+        
+        <div class="box">YELLOW BOX</div>
+        
+        <button class="interactive magnetic">MAGNETIC BUTTON</button>
+
+        <div class="dark-section">
+            <h2>Dark Section Contrast</h2>
+            <p>Notice how the cursor smoothly inverts color regardless of background.</p>
+            <button class="interactive magnetic" style="background: white; color: #001B94;">WHITE BUTTON</button>
+        </div>
+
+        <div style="height: 50vh;"></div>
+    </div>
+
+    <!-- Script Import -->
+    <script src="mouse-invert-vanilla.js"></script>
+    <script>
+        // Simple initialization
+        window.onload = () => {
+            if (window.innerWidth > 1024) {
+                new MouseInverter({
+                    radius: 40,
+                    magneticStrength: 0.4
+                });
+            }
+        };
+    </script>
+</body>
+</html>
